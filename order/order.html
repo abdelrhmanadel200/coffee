@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Order Summary</title>
+    <link rel="stylesheet" href="order.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<header class="header">
+    <div class="cont">
+        <div class="logo">
+            <img src="../sakn-MxZLVC (2).png" alt="OFFEE">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../menu_page/project_home_page.html">Menu</a></li>
+                <li><a href="../Gift/Gift.html">Gifts</a></li>
+                <li><a href="../AboutUs/aboutus4.html">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search..." />
+            <button class="search-btn">
+                <i class="fas fa-search"></i> <!-- Search icon (using Font Awesome) -->
+            </button>
+        </div>
+        <div class="header-buttons">
+            <a href="../Login/login.html" class="btn btn-secondary">Sign In</a>
+        </div>
+        <button class="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+
+
+<body>
+
+    <div class="container">
+        <table class="summary-table">            <tr>
+                <td colspan="2">
+                    <h1>Order Summary</h1>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h2>Starbucks</h2>
+                </td>
+            </tr>
+            <tbody id="order-items"></tbody>
+            <tr>
+                <td colspan="2">
+                    <h2>Delivery Address</h2>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Please add a new address to proceed with checkout
+                    <button class="add-address">ADD</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h2>Add Special Requests</h2>
+                    <textarea placeholder="e.g., if you have a food allergy or a request for the driver"></textarea>
+                    <p class="note">Do not add chargeable items, as this may cause your order to be cancelled.</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h2>Payment Summary</h2>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="voucher-warning">
+                        <p><i class="fas fa-info-circle"></i> Do you have a discount code? Order it from Talabat to use it.
+
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Payment Method:</td>
+                <td>
+                    <label>
+                        <input type="radio" name="payment" value="credit-card">
+                        <i class="fas fa-credit-card"></i> Credit Card
+                    </label>
+                    <label>
+                        <input type="radio" name="payment" value="cash" checked>
+                        <i class="fas fa-money-bill-alt"></i> Cash
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Subtotal:</td>
+                <td id="subtotal">EGP 0.00</td>
+            </tr>
+            <tr>
+                <td>Delivery Fee:</td>
+                <td id="delivery-fee">EGP 20.99</td>
+            </tr>
+            <tr>
+                <td>Service Fee:</td>
+                <td id="service-fee">EGP 9.50</td>
+            </tr>
+            <tr>
+                <td><strong>Total Amount:</strong></td>
+                <td><strong id="total-amount">EGP 0.00</strong></td>
+            </tr>
+        </table>
+            <div class="place-order-section">
+            <button class="place-order">PLACE ORDER</button>
+            <div id="order-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <h2>Order Confirmation</h2>
+                    <p>Your order has been successfully placed!</p>
+                    <button id="close-modal" class="modal-button">Close</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="order.js"></script>
+    
+     <!-- Footer -->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="con">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../sakn-MxZLVC (2).png" alt="OFFEE">
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../menu_page/project_home_page.html">Menu</a></li>
+                        <li><a href="../Gift/Gift.html">Gifts</a></li>
+                        <li><a href="../AboutUs/aboutus4.html">About Us</a></li>
+                        <li><a href="../Locations/location.html">Our Locations</a></li>
+                        <li><a href="../Reviews/Review.html">Review</a></li>
+                        <li><a href="../blog/blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <a href="../contactUs/contactUs.html">Contact Us</a> <!-- Link to the Contact Us page -->                </div>
+                
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cafe OFFEE. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

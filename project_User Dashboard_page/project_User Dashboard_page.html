@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - Cafe OFFEE</title>
+    <link rel="stylesheet" href="project_User Dashboard_page.css">
+</head>
+<body>
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="logo">
+                    <img src="sakn-MxZLVC (2).png" alt="OFFEE">
+                </div>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../menu_page/project_home_page.html">Menu</a></li>
+                        <li><a href="../Gift/Gift.html">Gifts</a></li>
+                        <li><a href="../AboutUs/aboutus4.html">About Us</a></li>
+                    </ul>
+                </nav>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search..." />
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i> <!-- Search icon (using Font Awesome) -->
+                    </button>
+                </div>
+                <div class="header-buttons">
+                    <a href="#" class="btn btn-secondary">Sign In</a>
+                </div>
+                <button class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Gift.html">Gift Cards</a>
+        </nav>
+
+    <!-- Dashboard Content -->
+    <section class="dashboard-content">
+        <div class="welcome-section">
+            <h1>Welcome back, [User's Name]!</h1>
+            <p>Here is your personalized dashboard</p>
+        </div>
+
+        <!-- User Orders Section -->
+        <section id="orders" class="user-orders">
+            <h2>Your Recent Orders</h2>
+            <div class="order-cards">
+                <div class="order-card">
+                    <img src="dsfdsf-JNpZHM.png" alt="Espresso">
+                    <div class="order-info">
+                        <h3>Espresso</h3>
+                        <p>Date: 2024-11-25</p>
+                        <p>Total: $3.00</p>
+                        <button onclick="location.href='order-details.html'">View Details</button>
+                    </div>
+                </div>
+                <div class="order-card">
+                    <img src="group-34-iNQ0d4.png" alt="Latte">
+                    <div class="order-info">
+                        <h3>Latte</h3>
+                        <p>Date: 2024-11-22</p>
+                        <p>Total: $4.50</p>
+                        <button onclick="location.href='order-details.html'">View Details</button>
+                    </div>
+                </div>
+                <!-- Add more order cards here -->
+            </div>
+        </section>
+
+        <!-- User Profile Section -->
+        <section id="profile" class="user-profile">
+            <h2>Your Profile</h2>
+            <div class="profile-info">
+                <img src="pexels-bruno-cervera-2686907-EB2fFm.png" alt="User Profile Picture">
+                <div>
+                    <p>Name: [User's Name]</p>
+                    <p>Email: [User's Email]</p>
+                    <button onclick="location.href='edit-profile.html'">Edit Profile</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Payment Methods Section -->
+        <section id="payment" class="payment-methods">
+            <h2>Payment Methods</h2>
+            <div class="payment-card">
+                <img src="1751079_0.jpg" alt="Visa Card">
+                <div>
+                    <p>Card Ending in: **** 1234</p>
+                    <button onclick="location.href='add-payment.html'">Add New Payment Method</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exclusive Offers Section -->
+        <section id="offers" class="exclusive-offers">
+            <h2>Exclusive Offers Just for You!</h2>
+            <div class="offer-card">
+                <img src="asa-j2gyxb (1).png" alt="Offer Image">
+                <div>
+                    <h3>10% Off on Your Next Order</h3>
+                    <p>Use promo code: <strong>CAFE10</strong></p>
+                    <button onclick="location.href='order.html'">Order Now</button>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Footer -->
+    
+     <!-- Footer -->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../sakn-MxZLVC (2).png" alt="OFFEE">
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../menu_page/project_home_page.html">Menu</a></li>
+                        <li><a href="../Gift/Gift.html">Gifts</a></li>
+                        <li><a href="../AboutUs/aboutus4.html">About Us</a></li>
+                        <li><a href="../Locations/location.html">Our Locations</a></li>
+                        <li><a href="../Reviews/Review.html">Review</a></li>
+                        <li><a href="../blog/blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <a href="../contactUs/contactUs.html">Contact Us</a> <!-- Link to the Contact Us page -->                </div>
+                
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cafe OFFEE. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

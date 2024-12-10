@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Buzz - Your Daily Coffee Companion</title>
+    <link rel="stylesheet" href="blog.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="../sakn-MxZLVC (2).png" alt="OFFEE">
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../menu_page/project_home_page.html">Menu</a></li>
+                    <li><a href="../Gift/Gift.html">Gifts</a></li>
+                    <li><a href="../AboutUs/aboutus4.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Search..." />
+                <button class="search-btn">
+                    <i class="fas fa-search"></i> <!-- Search icon (using Font Awesome) -->
+                </button>
+            </div>
+            <div class="header-buttons">
+                <a href="../Login/login.html" class="btn btn-secondary">Sign In</a>
+            </div>
+            <button class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    
+    <main class="blog-container">
+        <section class="blog-intro">
+            <h1 class="blog-title">Bean Buzz</h1>
+            <p class="blog-tagline">Brewing Stories, One Cup at a Time</p>
+        </section>
+
+        <section id="blogGrid" class="blog-grid">
+            <!-- Blog posts will be dynamically inserted here -->
+        </section>
+
+        <section class="category-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="brewing">Brewing</button>
+            <button class="filter-btn" data-filter="roasting">Roasting</button>
+            <button class="filter-btn" data-filter="origins">Origins</button>
+            <button class="filter-btn" data-filter="culture">Culture</button>
+        </section>
+
+        <section class="add-blog-post">
+            <h2>Share Your Coffee Story</h2>
+            <form id="blogForm">
+                <input type="text" id="blogTitle" placeholder="Blog Title" required>
+                <textarea id="blogContent" placeholder="Your coffee experience..." required></textarea>
+                <select id="blogCategory" required>
+                    <option value="">Select Category</option>
+                    <option value="brewing">Brewing</option>
+                    <option value="roasting">Roasting</option>
+                    <option value="origins">Origins</option>
+                    <option value="culture">Culture</option>
+                </select>
+                <button type="submit">Post Blog</button>
+            </form>
+        </section>
+
+        <div class="floating-menu">
+            <button class="menu-toggle"><i class="fas fa-mug-hot"></i></button>
+            <nav class="menu-items">
+                <a href="#" class="menu-item"><i class="fas fa-home"></i> Home</a>
+                <a href="#" class="menu-item"><i class="fas fa-store"></i> Shop</a>
+                <a href="#" class="menu-item"><i class="fas fa-envelope"></i> Contact</a>
+                <a href="#" class="menu-item"><i class="fas fa-rss"></i> Subscribe</a>
+            </nav>
+        </div>
+    </main>
+    <script src="blog.js"></script>
+
+    
+     <!-- Footer -->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../sakn-MxZLVC (2).png" alt="OFFEE">
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul> 
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../menu_page/project_home_page.html">Menu</a></li>
+                        <li><a href="../Gift/Gift.html">Gifts</a></li>
+                        <li><a href="../AboutUs/aboutus4.html">About Us</a></li>
+                        <li><a href="../Locations/location.html">Our Locations</a></li>
+                        <li><a href="../Reviews/Review.html">Review</a></li>
+                        <li><a href="../blog/blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <a href="../contactUs/contactUs.html">Contact Us</a> <!-- Link to the Contact Us page -->                </div>
+                
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cafe OFFEE. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
