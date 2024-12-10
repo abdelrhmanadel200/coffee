@@ -1,0 +1,435 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: #3E2A47; /* لون الخلفية البني */
+    line-height: 1.6;
+}
+
+/* Header */
+/* Header container */
+.header {
+    background-color: #FBF8F1; /* Light coffee cream */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+/* Header content container */
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+/* Logo */
+.logo img {
+    height: 50px;
+}
+
+/* Navbar */
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+/* Navbar items */
+.navbar ul li {
+    margin-left: 30px;
+}
+
+/* Navbar links */
+.navbar ul li a {
+    text-decoration: none;
+    color: #000; /* Soft beige */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Navbar link hover */
+.navbar ul li a:hover {
+    color: #006A67; /* Minty turquoise accent */
+}
+
+/* Header buttons */
+/* Advanced button styles */
+.header-buttons .btn {
+    margin-left: 15px;
+    padding: 12px 20px;
+    background-color: #54BAB9; /* Minty turquoise */
+    color: white;
+    border: none;
+    border-radius: 50px; /* Rounded edges for a sleek look */
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px; /* Slightly increased letter spacing for readability */
+    text-transform: uppercase; /* Uppercase letters for a bolder look */
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for all changes */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for a 3D effect */
+}
+
+/* Button hover effect */
+.header-buttons .btn:hover {
+    background-color: #006A67; /* Darker minty turquoise */
+    transform: translateY(-3px); /* Lift the button on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow for a more pronounced hover effect */
+}
+
+/* Button active effect (when clicked) */
+.header-buttons .btn:active {
+    transform: translateY(1px); /* Slightly push the button down on click for a realistic effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reset the shadow */
+}
+
+/* Focus state for accessibility */
+.header-buttons .btn:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(84, 186, 185, 0.5); /* Custom focus ring with the button color */
+}
+
+
+/* Mobile menu toggle (hidden by default) */
+.mobile-menu-toggle {
+    display: none;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff; /* White background for the search bar */
+    border-radius: 50px; /* Rounded edges for the search bar */
+    padding: 5px 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: all 0.3s ease;
+}
+
+/* Search input */
+.search-bar input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    width: 200px;
+    border-radius: 50px;
+    background-color: #f4f4f4; /* Light gray background for input */
+    color: #333; /* Dark text for visibility */
+    transition: width 0.3s ease, background-color 0.3s ease; /* Smooth transition on focus */
+}
+
+/* Search input focus state */
+.search-bar input:focus {
+    background-color: #fff; /* Lighter background on focus */
+    width: 250px; /* Expand the input field when focused */
+}
+
+/* Search button */
+.search-bar .search-btn {
+    background-color: #54BAB9; /* Minty turquoise */
+    border: none;
+    border-radius: 50%; /* Round button for a clean look */
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Search button icon */
+.search-bar .search-btn i {
+    color: white;
+    font-size: 18px; /* Icon size */
+}
+
+/* Search button hover effect */
+.search-bar .search-btn:hover {
+    background-color: #006A67; /* Darker minty turquoise */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Search button active effect */
+.search-bar .search-btn:active {
+    transform: translateY(1px); /* Slight push-down effect when clicked */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reset the shadow */
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://cdn.cmsfly.com/640da9b6b98f3003e27fe762/qqq-jEL1qt.png'); /* وضع الصورة التي ترغب بها */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding: 8rem 1rem 4rem; /* وضع مسافة للتأكد أن النص يظهر أسفل الهيدر */
+    position: relative;
+}
+
+.hero .hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1, .hero p {
+    z-index: 2; /* النص يظهر فوق الصورة */
+}
+
+.hero .btn-primary {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    background-color: #FFD700;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 2; /* الزر يظهر فوق الصورة */
+}
+
+.hero .btn-primary:hover {
+    background-color: #FFC107;
+    transform: scale(1.05);
+}
+
+/* Menu Section */
+.menu-section {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #f1ebe4; /* اللون البني الفاتح للقسم */
+}
+
+.menu-section h2 {
+    font-size: 2.5rem;
+    color: #141312; /* لون ذهبي */
+    margin-bottom: 1rem;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    background: white;
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+.menu-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.menu-item p {
+    color: #6B4226;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.menu-item .btn-secondary {
+    padding: 0.5rem 1rem;
+    background-color: #FFD700;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.menu-item .btn-secondary:hover {
+    background-color: #FFC107;
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+/* Footer Styles */
+.footer {
+    background: linear-gradient(135deg, #3e2723, #4b2c20); /* Coffee gradient */
+    color: #f1f1f1; /* Light text color */
+    padding: 60px 20px 40px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Footer content area */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px; /* Space between sections */
+    margin-bottom: 40px;
+}
+
+/* Footer logo styling */
+.footer-logo img {
+    height: 60px;
+    filter: brightness(0) invert(1); /* Invert logo for contrast */
+}
+
+/* Footer Links Section */
+.footer-links,
+.footer-contact,
+.footer-social {
+    margin-bottom: 20px;
+    flex: 1;
+    min-width: 250px; /* Ensure a minimum width for each section */
+}
+
+/* Footer Section Titles */
+.footer h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Footer Links */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+/* Footer link hover effect */
+.footer-links ul li a:hover {
+    color: #ff6f00; /* Warm coffee orange */
+    padding-left: 10px; /* Smooth slide effect */
+}
+
+/* Footer Contact Button */
+.footer-contact a {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #ff6f00; /* Button background */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for Contact Us button */
+.footer-contact a:hover {
+    background-color: #e65100; /* Darker shade on hover */
+    transform: translateY(-3px); /* Button lift effect */
+}
+
+/* Footer Social Icons */
+.footer-social a {
+    color: #f1f1f1;
+    font-size: 2em;
+    margin-right: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Social Icons hover effect */
+.footer-social a:hover {
+    color: #ff6f00; /* Accent color */
+    transform: translateY(-5px); /* Icon lift effect */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 14px;
+}
+
+/* Footer Bottom text color */
+.footer-bottom p {
+    color: #d1d1d1;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-logo {
+        margin-bottom: 30px;
+    }
+
+    .footer-links,
+    .footer-contact,
+    .footer-social {
+        margin-bottom: 30px;
+    }
+
+    .footer-links ul li {
+        font-size: 14px;
+    }
+
+    .footer-social a {
+        font-size: 1.5em;
+    }
+}
+
+
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: #3E2A47;
+    line-height: 1.6;
+}
+
+
+
+
+
+

@@ -1,0 +1,441 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f1ebe4;
+    color: #333;
+}
+/* Header */
+/* Header container */
+.header {
+    background-color: #FBF8F1; /* Light coffee cream */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+/* Header content container */
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+/* Logo */
+.logo img {
+    height: 50px;
+}
+
+/* Navbar */
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+/* Navbar items */
+.navbar ul li {
+    margin-left: 30px;
+}
+
+/* Navbar links */
+.navbar ul li a {
+    text-decoration: none;
+    color: #000; /* Soft beige */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Navbar link hover */
+.navbar ul li a:hover {
+    color: #006A67; /* Minty turquoise accent */
+}
+
+/* Header buttons */
+/* Advanced button styles */
+.header-buttons .btn {
+    margin-left: 15px;
+    padding: 12px 20px;
+    background-color: #54BAB9; /* Minty turquoise */
+    color: white;
+    border: none;
+    border-radius: 50px; /* Rounded edges for a sleek look */
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px; /* Slightly increased letter spacing for readability */
+    text-transform: uppercase; /* Uppercase letters for a bolder look */
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for all changes */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for a 3D effect */
+}
+
+/* Button hover effect */
+.header-buttons .btn:hover {
+    background-color: #006A67; /* Darker minty turquoise */
+    transform: translateY(-3px); /* Lift the button on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow for a more pronounced hover effect */
+}
+
+/* Button active effect (when clicked) */
+.header-buttons .btn:active {
+    transform: translateY(1px); /* Slightly push the button down on click for a realistic effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reset the shadow */
+}
+
+/* Focus state for accessibility */
+.header-buttons .btn:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(84, 186, 185, 0.5); /* Custom focus ring with the button color */
+}
+
+
+/* Mobile menu toggle (hidden by default) */
+.mobile-menu-toggle {
+    display: none;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff; /* White background for the search bar */
+    border-radius: 50px; /* Rounded edges for the search bar */
+    padding: 5px 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: all 0.3s ease;
+}
+
+/* Search input */
+.search-bar input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    width: 200px;
+    border-radius: 50px;
+    background-color: #f4f4f4; /* Light gray background for input */
+    color: #333; /* Dark text for visibility */
+    transition: width 0.3s ease, background-color 0.3s ease; /* Smooth transition on focus */
+}
+
+/* Search input focus state */
+.search-bar input:focus {
+    background-color: #fff; /* Lighter background on focus */
+    width: 250px; /* Expand the input field when focused */
+}
+
+/* Search button */
+.search-bar .search-btn {
+    background-color: #54BAB9; /* Minty turquoise */
+    border: none;
+    border-radius: 50%; /* Round button for a clean look */
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Search button icon */
+.search-bar .search-btn i {
+    color: white;
+    font-size: 18px; /* Icon size */
+}
+
+/* Search button hover effect */
+.search-bar .search-btn:hover {
+    background-color: #006A67; /* Darker minty turquoise */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Search button active effect */
+.search-bar .search-btn:active {
+    transform: translateY(1px); /* Slight push-down effect when clicked */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reset the shadow */
+}
+
+
+
+/* Dashboard Content */
+.dashboard-content {
+    margin-top: 100px;
+    padding: 3rem 2rem;
+    background-color: #f1ebe4;
+}
+
+/* Welcome Section */
+.welcome-section h1 {
+    font-size: 2.5rem;
+    color: #2C1507;
+    margin-bottom: 1rem;
+}
+
+.welcome-section p {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+/* User Orders Section */
+.user-orders h2 {
+    font-size: 2rem;
+    color: #2C1507;
+    margin-bottom: 2rem;
+}
+
+.order-cards {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.order-card {
+    background-color: white;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.order-card:hover {
+    transform: scale(1.05);
+}
+
+.order-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.order-info {
+    padding: 1rem;
+    text-align: center;
+}
+
+.order-info h3 {
+    font-size: 1.5rem;
+    color: #2C1507;
+}
+
+.order-info p {
+    font-size: 1rem;
+    color: #777;
+}
+
+button {
+    padding: 0.6rem 1rem;
+    background-color: #FFD700;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #FFC107;
+}
+
+/* User Profile Section */
+.user-profile {
+    margin-top: 3rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-profile .profile-info {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.user-profile .profile-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-profile .profile-info div {
+    flex-grow: 1;
+}
+
+.user-profile button {
+    margin-top: 1rem;
+}
+
+/* Payment Methods Section */
+.payment-methods {
+    margin-top: 3rem;
+}
+
+.payment-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.payment-card img {
+    width: 60px;
+}
+
+.payment-card div {
+    flex-grow: 1;
+}
+
+/* Exclusive Offers Section */
+.exclusive-offers {
+    margin-top: 3rem;
+}
+
+.offer-card {
+    background-color: white;
+    padding: 1.5rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.offer-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.offer-card div {
+    flex-grow: 1;
+}
+
+
+/* Footer Styles */
+/* Footer Styles */
+.footer {
+    background: linear-gradient(135deg, #3e2723, #4b2c20); /* Coffee gradient */
+    color: #f1f1f1; /* Light text color */
+    padding: 60px 20px 40px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Footer content area */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px; /* Space between sections */
+    margin-bottom: 40px;
+}
+
+/* Footer logo styling */
+.footer-logo img {
+    height: 60px;
+    filter: brightness(0) invert(1); /* Invert logo for contrast */
+}
+
+/* Footer Links Section */
+.footer-links,
+.footer-contact,
+.footer-social {
+    margin-bottom: 20px;
+    flex: 1;
+    min-width: 250px; /* Ensure a minimum width for each section */
+}
+
+/* Footer Section Titles */
+.footer h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Footer Links */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+/* Footer link hover effect */
+.footer-links ul li a:hover {
+    color: #ff6f00; /* Warm coffee orange */
+    padding-left: 10px; /* Smooth slide effect */
+}
+
+/* Footer Contact Button */
+.footer-contact a {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #ff6f00; /* Button background */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for Contact Us button */
+.footer-contact a:hover {
+    background-color: #e65100; /* Darker shade on hover */
+    transform: translateY(-3px); /* Button lift effect */
+}
+
+/* Footer Social Icons */
+.footer-social a {
+    color: #f1f1f1;
+    font-size: 2em;
+    margin-right: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Social Icons hover effect */
+.footer-social a:hover {
+    color: #ff6f00; /* Accent color */
+    transform: translateY(-5px); /* Icon lift effect */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 14px;
+}
+
+/* Footer Bottom text color */
+.footer-bottom p {
+    color: #d1d1d1;
+    margin: 0;
+}
+

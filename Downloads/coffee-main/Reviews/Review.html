@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - Coffee Haven</title>
+    <link rel="stylesheet" href="twoPages.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="../sakn-MxZLVC (2).png" alt="OFFEE">
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../menu_page/project_home_page.html">Menu</a></li>
+                    <li><a href="../Gift/Gift.html">Gifts</a></li>
+                    <li><a href="../aboutus/About.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Search..." />
+                <button class="search-btn">
+                    <i class="fas fa-search"></i> <!-- Search icon (using Font Awesome) -->
+                </button>
+            </div>
+            <div class="header-buttons">
+                <a href="#" class="btn btn-secondary">Sign In</a>
+            </div>
+            <button class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    
+
+    <main>
+        <section id="submit-review" class="zew">
+            <h2>Submit a Review</h2>
+            <form id="review-form">
+                <div id="star-rating">
+                    <span class="star" data-rating="1">&#9733;</span>
+                    <span class="star" data-rating="2">&#9733;</span>
+                    <span class="star" data-rating="3">&#9733;</span>
+                    <span class="star" data-rating="4">&#9733;</span>
+                    <span class="star" data-rating="5">&#9733;</span>
+                </div>
+                <input type="hidden" id="rating" required>
+                <label for="comment">Comment:</label>
+                <textarea id="comment" rows="3" required></textarea>
+                <button type="submit">Submit Review</button>
+            </form>
+        </section>
+
+        <section id="read-reviews" class="zew">
+            <h2>Customer Reviews</h2>
+            <div id="filter-sort">
+                <label for="filter">Filter by rating:</label>
+                <select id="filter">
+                    <option value="all">All ratings</option>
+                    <option value="5">5 stars</option>
+                    <option value="4">4 stars</option>
+                    <option value="3">3 stars</option>
+                    <option value="2">2 stars</option>
+                    <option value="1">1 star</option>
+                </select>
+                <label for="sort">Sort by:</label>
+                <select id="sort">
+                    <option value="date">Date</option>
+                    <option value="rating">Rating</option>
+                </select>
+            </div>
+            <div id="reviews-list"></div>
+        </section>
+    </main>
+
+    <script src="twoPages.js"></script>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="con">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../sakn-MxZLVC (2).png" alt="OFFEE">
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../menu_page/project_home_page.html">Menu</a></li>
+                        <li><a href="../Gift/Gift.html">Gifts</a></li>
+                        <li><a href="../AboutUs/aboutus4.html">About Us</a></li>
+                        <li><a href="../Locations/location.html">Our Locations</a></li>
+                        <li><a href="../Reviews/Review.html">Review</a></li>
+                        <li><a href="../blog/blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <a href="../contactUs/contactUs.html">Contact Us</a> <!-- Link to the Contact Us page -->                </div>
+                
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cafe OFFEE. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
